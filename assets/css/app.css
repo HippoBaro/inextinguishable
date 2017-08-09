@@ -10,10 +10,11 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
 a {
   word-wrap: break-word;
   background-color: transparent;
-  color: #378a9b;
+  color: #E55400;
   transition: opacity .2s;
 }
 a:hover {
@@ -21,7 +22,7 @@ a:hover {
 }
 a.disabled {
   pointer-events: none;
-  color: #eee;
+  color: #EEE;
 }
 
 /* Posts */
