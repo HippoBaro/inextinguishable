@@ -5,13 +5,14 @@
 <header class="{{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
     <nav class="">
         {{#if @blog.logo}}<a class="" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{#if @blog.navigation}}
-        {{/if}}
     </nav>
     <div class="tc">
         <h1 class="fw3 f-headline-ns f1 f1-m ttu tracked mb0-l"><a class="no-underline dark-gray link dim" href="{{@blog.url}}">{{@blog.title}}</a></h1>
         <h2 class="fw3 f4-ns f5 ttu tracked gray tc">{{@blog.description}}</h2>
     </div>
+    {{#if @blog.navigation}}
+        {{navigation}}
+    {{/if}}
 </header>
 
 {{!-- The main content area on the homepage --}}

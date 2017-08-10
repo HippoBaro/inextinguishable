@@ -27,10 +27,15 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
-<body class="relative pb6 mt5">
+<body class="relative pb4">
 
     {{!-- The blog navigation links --}}
-    {{!-- navigation --}}
+    {{#is "index"}}
+    {{else}}
+    <header>
+        {{navigation}}
+    </header>
+    {{/is}}
 
     <div class="w-60-l w-90 ph3 ph0-l ph3-m center">
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
